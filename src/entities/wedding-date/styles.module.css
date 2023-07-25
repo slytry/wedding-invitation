@@ -1,0 +1,16 @@
+.Root {
+	height: 65px;
+	display: flex;
+	gap: 1.4rem;
+}
+
+.Letter {
+font-size: 70px;
+line-height: 1;
+font-weight: 400;
+}
+
+.Separator {
+	width: 2px;
+	background-color: black;
+}

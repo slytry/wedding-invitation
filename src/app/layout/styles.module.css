@@ -1,0 +1,4 @@
+.main {
+	padding-block: 5dvh;
+	padding-inline: clamp(8px, 5vw, 32px);
+}

@@ -1,0 +1,40 @@
+.Root {
+	display: flex;
+	gap: 2rem;
+	padding-inline: 1rem;
+}
+
+
+.Circles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Circles>img {
+	width: 60px;
+	aspect-ratio: 1;
+}
+
+.Line {
+	width: 1px;
+	height: 72px;
+	background-color: black;
+}
+
+/* fsdf */
+
+.Steps {
+	display: grid;
+	gap: 4rem;
+}
+
+.Time {
+	font-size: 30px;
+	margin-bottom: 0.7rem;
+}
+
+.Place {
+	font-size: 18px;
+}

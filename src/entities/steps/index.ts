@@ -1,0 +1,1 @@
+export { stepsText } from "./config";

@@ -1,0 +1,19 @@
+.Root {
+	/* min-height: 100dvh; */
+	margin-bottom: 60px;
+}
+
+.Intro,
+.Desc {
+	font-size: 20px;
+}
+
+.Date {
+	margin-block: 1.6rem;
+}
+
+.Desc {
+	max-inline-size: 50ch;
+	text-wrap: balance;
+	line-height: 1.3;
+}
