@@ -1,10 +1,10 @@
 import { stepsText } from "~/entities/steps";
 import s from "./styles.module.css";
-import { Fragment } from "react";
+import clsx from "clsx";
 
-export const Info = () => {
+export const Schedule = () => {
 	return (
-		<section className={s.Root}>
+		<section className={clsx(s.Root, "container")}>
 			<div className={s.Circles}>
 				<img src="/photo0.png" alt="" />
 				<div className={s.Line} />
@@ -16,7 +16,7 @@ export const Info = () => {
 				{stepsText.map((el) => (
 					<div className={s.Step} key={el.time}>
 						<p className={s.Time}>{el.time}</p>
-						<p className={s.description}>{el.place}</p>
+						<p className={s.Place}>{el.place}</p>
 					</div>
 				))}
 			</div>

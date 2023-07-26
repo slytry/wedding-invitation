@@ -1,14 +1,24 @@
 import { Main } from "~/app";
-import { Home } from "~/widgets/home";
-import { Info } from "~/widgets/info";
+import { Attire } from "~/widgets/attire";
+import { GetTouch } from "~/widgets/get-touch";
 import { Intro } from "~/widgets/intro";
+import { Invite } from "~/widgets/invite";
+import { GetRich } from "~/widgets/location";
+import { Rules } from "~/widgets/rules";
+import { Schedule } from "~/widgets/schedule";
+import { Whishes } from "~/widgets/whishes";
 
 export default function HomePage() {
 	return (
 		<Main>
 			<Intro />
-			<Home />
-			<Info />
+			<Invite />
+			<Schedule />
+			<GetRich />
+			<GetTouch />
+			<Attire />
+			<Rules />
+			<Whishes />
 		</Main>
 	);
 }

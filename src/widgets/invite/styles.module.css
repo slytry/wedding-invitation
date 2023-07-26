@@ -1,0 +1,16 @@
+.Root {
+	margin-bottom: var(--space-2xl-3xl);
+}
+
+.Intro,
+.Desc {
+	font-size: var(--step-1);
+}
+
+.Date {
+	margin-block: var(--space-m);
+}
+
+.Desc {
+	line-height: 1.3;
+}

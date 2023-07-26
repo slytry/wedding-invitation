@@ -1,0 +1,20 @@
+.Root {
+	position: relative;
+	text-align: center;
+
+}
+
+.Heading {
+	font-size: var(--step-3);
+	margin-bottom: var(--space-l);
+	letter-spacing: -1px;
+}
+
+
+.Image {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	scale: 1.2;
+}

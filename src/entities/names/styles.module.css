@@ -1,31 +1,30 @@
 .Root {
-	/* height: 220px; */
-	/* position: relative; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
 	width: 100%;
-	gap: 16px;
+	gap: calc(4vh + 3vw);
 }
 
 .Title {
 	font-weight: 400;
-	font-size: 30px;
+	font-size: var(--step-4);
 }
 
 .Img {
-	width: 80px;
+	--x-offset: 30vw;
+	--max-x-offset: 350px;
+	--min-x-offset: 130px;
+	--img-width: clamp(100px, 16vw, 200px);
+
+	width: var(--img-width);
 	aspect-ratio: 1;
-	/* position: absolute; */
 }
 
 .R {
-	/* top: 0; */
-	transform: translateX(135px)
+	transform: translateX(clamp(var(--min-x-offset), var(--x-offset), var(--max-x-offset)));
 }
 
 .N {
-	/* bottom: 0; */
-	transform: translateX(-135px);
+	transform: translateX(clamp(calc(-1 * var(--max-x-offset)), calc(-1 * var(--x-offset)), calc(-1 * var(--min-x-offset))));
 }

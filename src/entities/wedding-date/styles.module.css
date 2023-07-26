@@ -1,13 +1,13 @@
 .Root {
-	height: 65px;
+	height: var(--step-5);
 	display: flex;
 	gap: 1.4rem;
 }
 
 .Letter {
-font-size: 70px;
-line-height: 1;
-font-weight: 400;
+	font-size: var(--step-5);
+	line-height: 1;
+	font-weight: 400;
 }
 
 .Separator {

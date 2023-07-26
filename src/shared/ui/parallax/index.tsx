@@ -1,10 +1,11 @@
-import { useState, useRef, useLayoutEffect, ReactNode } from "react";
+import { useState, useRef, ReactNode } from "react";
 import {
 	m,
 	useScroll,
 	useTransform,
 	useSpring,
 	useReducedMotion,
+	useIsomorphicLayoutEffect,
 } from "framer-motion";
 
 type ParallaxProps = {
@@ -29,7 +30,7 @@ export const Parallax = ({
 	const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
 	const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-	useLayoutEffect(() => {
+	useIsomorphicLayoutEffect(() => {
 		const element = ref.current;
 		const onResize = () => {
 			setElementTop(

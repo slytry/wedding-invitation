@@ -1,0 +1,29 @@
+.Root {
+	margin-bottom: var(--space-3xl);
+	text-align: center;
+}
+
+.Text {
+	font-size: var(--step-0);
+	margin-bottom: var(--space-m);
+}
+
+.Name {
+	font-size: var(--step-2);
+	letter-spacing: 2px;
+	margin-bottom: var(--space-s);
+}
+
+.Link {
+	font-size: var(--step-0);
+	font-weight: 600;
+	display: block;
+	padding-block: 1rem;
+	color: #ffffff;
+	text-align: center;
+	background-color: black;
+}
+
+.Link:first-of-type {
+	margin-bottom: var(--space-s);
+}
