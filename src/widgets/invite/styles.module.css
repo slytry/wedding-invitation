@@ -1,5 +1,5 @@
 .Root {
-	margin-bottom: var(--space-2xl-3xl);
+	text-align: center;
 }
 
 .Intro,
@@ -9,8 +9,10 @@
 
 .Date {
 	margin-block: var(--space-m);
+	justify-content: center;
 }
 
 .Desc {
 	line-height: 1.3;
+	max-inline-size: 30ch;
 }

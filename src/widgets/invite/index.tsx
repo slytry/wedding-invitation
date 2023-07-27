@@ -11,7 +11,7 @@ export const Invite = () => {
 			<p className={s.Intro}>{text.intro}</p>
 			<WeddingDate className={s.Date} />
 			<p className={clsx(s.Desc)}>
-				<Balancer ratio={1}>{parse(text.description)}</Balancer>
+				<Balancer>{parse(text.description)}</Balancer>
 			</p>
 		</section>
 	);

@@ -1,7 +1,6 @@
 .Root {
 	display: flex;
 	gap: var(--space-m-l);
-	margin-bottom: var(--space-2xl-3xl);
 }
 
 

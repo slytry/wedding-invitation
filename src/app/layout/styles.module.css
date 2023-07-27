@@ -1,3 +1,5 @@
 .main {
 	padding-bottom: 10dvh;
+	display: grid;
+	gap: var(--space-2xl-3xl);
 }

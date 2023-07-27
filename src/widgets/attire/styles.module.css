@@ -1,5 +1,5 @@
 .Root {
-	margin-bottom: var(--space-2xl-3xl);
+	text-align: center;
 }
 
 .Image {
@@ -9,4 +9,5 @@
 
 .Text {
 	font-size: var(--step-0);
+	max-inline-size: var(--max-text-size);
 }

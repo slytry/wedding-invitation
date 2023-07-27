@@ -1,11 +1,11 @@
 .Root {
-	margin-bottom: var(--space-3xl);
 	text-align: center;
 }
 
 .Text {
 	font-size: var(--step-0);
 	margin-bottom: var(--space-m);
+	max-inline-size: 50ch;
 }
 
 .Name {
@@ -14,16 +14,19 @@
 	margin-bottom: var(--space-s);
 }
 
-.Link {
-	font-size: var(--step-0);
-	font-weight: 600;
-	display: block;
-	padding-block: 1rem;
-	color: #ffffff;
-	text-align: center;
-	background-color: black;
+.Links {
+	display: grid;
+	place-items: center;
+	gap: var(--space-s);
 }
 
-.Link:first-of-type {
-	margin-bottom: var(--space-s);
+.Link {
+	width: 100%;
+	max-width: 350px;
+	font-size: var(--step-0);
+	font-weight: 600;
+	display: inline-block;
+	padding-block: 1rem;
+	color: #ffffff;
+	background-color: black;
 }
