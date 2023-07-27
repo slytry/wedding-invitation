@@ -9,10 +9,7 @@ export const Attire = () => {
 			<HeadingWithBackground img="dressCode.svg" imgClass={clsx(s.Image)}>
 				{text.dress}
 			</HeadingWithBackground>
-			<p className={clsx(s.Text)}>
-				У нас нет определенного дресс-кода. Приходите в одежде в которой вам
-				будет комфортно.
-			</p>
+			<p className={clsx(s.Text)}>{text.dressText}</p>
 		</section>
 	);
 };

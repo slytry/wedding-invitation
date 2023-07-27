@@ -1,5 +1,6 @@
 import { Main } from "~/app";
 import { Attire } from "~/widgets/attire";
+import { Form } from "~/widgets/form";
 import { GetTouch } from "~/widgets/get-touch";
 import { Intro } from "~/widgets/intro";
 import { Invite } from "~/widgets/invite";
@@ -18,6 +19,7 @@ export default function HomePage() {
 			<GetTouch />
 			<Attire />
 			<Rules />
+			<Form />
 			<Whishes />
 		</Main>
 	);

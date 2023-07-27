@@ -12,7 +12,7 @@ export const GetTouch = () => {
 					ПОЗВОНИТЬ
 				</a>
 				<a className={clsx(s.Link)} href="https://wa.me/79289090068">
-					НАПИСАТЬ В WHATSUP
+					НАПИСАТЬ В WHATSAPP
 				</a>
 			</div>
 		</section>

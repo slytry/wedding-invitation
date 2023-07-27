@@ -1,5 +1,11 @@
 .main {
-	padding-bottom: 10dvh;
+	--space: 0.6rem;
+	padding-block: 10dvh;
 	display: grid;
 	gap: var(--space-2xl-3xl);
+	border: 2px solid black;
+	margin-block: var(--space);
+	border-radius: 20px;
+	width: min(750px, calc(100% - calc(2 *var(--space))));
+	margin-inline: auto;
 }

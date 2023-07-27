@@ -1,0 +1,40 @@
+.Root {
+	--gap: 1rem;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	gap: var(--gap);
+}
+
+.Content {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	gap: var(--gap);
+	min-width: 100%;
+	animation: scroll 10s linear infinite;
+	font-size: var(--step-1);
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+.Root {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.Content>* {
+	flex: 0 0 auto;
+	padding-inline: 1rem 1.5rem;
+	padding-block: 0.6rem;
+
+}

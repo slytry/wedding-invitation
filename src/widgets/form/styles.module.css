@@ -1,0 +1,53 @@
+.Root {
+	padding-block: var(--space-m);
+	text-align: left;
+	margin-inline: var(--space-s);
+	border: 2px dashed black;
+	border-radius: 20px;
+}
+
+.Title {
+	font-size: var(--step-1);
+	margin-bottom: var(--space-m)
+}
+
+.Input {
+	all: unset;
+	font-size: var(--step-0);
+	margin-bottom: var(--space-m);
+	padding-block: var(--space-3xs);
+	border-bottom: 1px solid black;
+}
+
+
+.Input::placeholder {
+	font: inherit;
+	font-style: italic;
+}
+
+
+
+.Legend {
+	font-size: var(--step-0);
+	margin-bottom: var(--space-s)
+}
+
+
+.Form {
+	display: grid;
+}
+
+
+.Button {
+	justify-self: center;
+	width: 100%;
+	max-width: 250px;
+	font-size: var(--step-0);
+	font-weight: 500;
+	display: inline-block;
+	padding-block: 1rem;
+	color: white;
+	background-color: black;
+	border: none;
+	margin-top: var(--space-m)
+}

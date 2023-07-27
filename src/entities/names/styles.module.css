@@ -9,6 +9,7 @@
 .Title {
 	font-weight: 400;
 	font-size: var(--step-4);
+	text-align: center;
 }
 
 .Img {
