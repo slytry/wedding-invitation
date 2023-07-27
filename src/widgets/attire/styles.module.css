@@ -3,6 +3,7 @@
 }
 
 .Image {
+	top: -44px;
 	margin-bottom: var(--space-2xl-3xl);
 }
 
