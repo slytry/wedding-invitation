@@ -77,3 +77,13 @@ a {
 	display: grid;
 	gap: var(--grid-gutter);
 }
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	button:hover {}
+
+	.card:hover span {
+		transform: translateX(4px);
+	}
+}

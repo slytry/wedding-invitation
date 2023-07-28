@@ -6,8 +6,8 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
 		const response = api.addItem({
 			title: req.body.name,
 			contact: req.body.contact,
+			time: req.body.time,
 		});
-		// console.log({ response });
 
 		res.status(200).json(response);
 	} catch (error) {

@@ -1,11 +1,18 @@
+import { PropsWithRef } from "react";
 import s from "./styles.module.css";
-type RadioProps = { value: string };
 
-export const Radio = (props: RadioProps) => {
+type RadioProps = PropsWithRef<"input">;
+//@ts-ignore
+export const Radio = ({ label, name, register, required }) => {
 	return (
 		<label className={s.Root}>
-			<input type="radio" className={s.Input} {...props} />
-			<span>{props.value}</span>
+			<input
+				className={s.Input}
+				{...register(name, { required })}
+				value={label}
+				type="radio"
+			/>
+			<span className={s.Label}>{label}</span>
 		</label>
 	);
 };

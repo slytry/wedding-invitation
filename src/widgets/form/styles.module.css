@@ -1,5 +1,5 @@
 .Root {
-	padding-block: var(--space-m);
+	padding-block: var(--space-l);
 	text-align: left;
 	margin-inline: var(--space-s);
 	border: 2px dashed black;
@@ -8,13 +8,14 @@
 
 .Title {
 	font-size: var(--step-1);
-	margin-bottom: var(--space-m)
+	margin-bottom: var(--space-m);
+
 }
 
 .Input {
 	all: unset;
-	font-size: var(--step-0);
-	margin-bottom: var(--space-m);
+	font-size: var(--step-1);
+	margin-bottom: var(--space-l);
 	padding-block: var(--space-3xs);
 	border-bottom: 1px solid black;
 }
@@ -28,8 +29,8 @@
 
 
 .Legend {
-	font-size: var(--step-0);
-	margin-bottom: var(--space-s)
+	font-size: var(--step-1);
+	margin-bottom: var(--space-m)
 }
 
 
@@ -41,7 +42,7 @@
 .Button {
 	justify-self: center;
 	width: 100%;
-	max-width: 250px;
+	max-width: 350px;
 	font-size: var(--step-0);
 	font-weight: 500;
 	display: inline-block;
@@ -49,5 +50,71 @@
 	color: white;
 	background-color: black;
 	border: none;
-	margin-top: var(--space-m)
+	margin-top: var(--space-l);
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+}
+
+
+.Button:disabled {
+	cursor: not-allowed;
+	background-color: lightgray;
+}
+
+
+.Button:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+}
+
+
+.Button:not(:disabled):active:after {
+	background: transparent;
+}
+
+.Button:not(:disabled):hover:before {
+	opacity: 1;
+}
+
+.Button:focus-visible::before {
+	opacity: 1;
+}
+
+.Button:not(:disabled):after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
 }
