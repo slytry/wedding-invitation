@@ -1,0 +1,24 @@
+.Root {
+	color: #333;
+	opacity: 0.3;
+	transition: opacity 140ms ease-in-out, transform 140ms ease-in-out;
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: grid;
+	place-content: center;
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	.Root:hover {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+}
+
+.Root:focus-visible {
+	transform: scale(1.1);
+	opacity: 1;
+}

@@ -10,7 +10,7 @@ export const sentForm = async (
 			.url("/form")
 			.post({ ...user, time: getCurrentData() });
 
-		return res;
+		onSuccess?.();
 	} catch (error) {
 		if (error instanceof Error) {
 			console.error(error.message);

@@ -8,7 +8,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 			contact: req.body.contact,
 			time: req.body.time,
 		});
-		console.log(response);
 
 		res.status(200).json(response);
 	} catch (e) {

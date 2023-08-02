@@ -1,0 +1,28 @@
+.Dialog {
+	border: none;
+	inset: 0;
+	position: fixed;
+	width: calc(100% - 1.6rem);
+	max-width: 450px;
+	margin: auto;
+	padding: 0;
+
+}
+
+
+.Wrapper {
+	padding-inline: var(--space-s);
+	padding-block: var(--space-l);
+	padding-block-start: calc(var(--space-m) + 1rem);
+}
+
+.Dialog::backdrop {
+	background-color: rgb(0 0 0 / 0.6);
+	backdrop-filter: blur(10px);
+}
+
+.Close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem
+}

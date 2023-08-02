@@ -4,6 +4,7 @@
 	margin-inline: var(--space-s);
 	border: 2px dashed black;
 	border-radius: 20px;
+	position: relative;
 }
 
 .Title {
@@ -117,4 +118,26 @@
 	100% {
 		background-position: 0 0;
 	}
+}
+
+.Dialog,
+.Dialog form {
+	display: grid;
+
+}
+
+.Dialog h1 {
+	text-align: center;
+	font-size: var(--step-1);
+}
+
+.Spinner {
+	z-index: 1;
+	background-color: rgb(0 0 0 / 0.6);
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-content: center;
 }
