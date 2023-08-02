@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.2",
     "react-wrap-balancer": "^1.0.0",
+    "runtypes": "^6.7.0",
     "wretch": "^2.6.0"
   },
   "devDependencies": {

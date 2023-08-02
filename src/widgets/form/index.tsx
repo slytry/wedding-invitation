@@ -2,8 +2,11 @@ import clsx from "clsx";
 import { text } from "~/shared/config";
 import s from "./styles.module.css";
 import { Radio } from "~/shared/ui/radio";
-import { api } from "~/shared/api";
 import { useForm } from "react-hook-form";
+import { commonApi } from "~/shared/api";
+import { NotionCell } from "~/shared/api/types";
+
+type Form = { name: NotionCell["title"]; contact: NotionCell["contact"] };
 
 export const Form = () => {
 	const {
@@ -11,12 +14,11 @@ export const Form = () => {
 		handleSubmit,
 		reset,
 		formState: { isValid },
-	} = useForm({
+	} = useForm<Form>({
 		mode: "onChange",
 	});
-	// @ts-ignore
-	const onSubmit = (data) => {
-		api.addItemClient(data, reset);
+	const onSubmit = (data: Form) => {
+		commonApi.sentForm(data, reset);
 	};
 
 	return (
