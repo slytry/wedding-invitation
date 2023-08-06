@@ -71,8 +71,8 @@ export const Form = () => {
 			<form className={s.Form} onSubmit={handleSubmit(onSubmit)}>
 				<p className={s.Bio}>Введите ваше имя</p>
 				<p className={s.Desc}>
-					Кнопка +1 добавить еще поле, где можно будет ввести имя, того с кем вы
-					придете
+					Если вы собираетесь прийти не один, укажите это. Нажмите на кнопку +1
+					и введите имя
 				</p>
 
 				<input
