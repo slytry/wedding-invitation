@@ -20,7 +20,7 @@ export const GetRich = () => {
 				<p className={clsx(s.Text)}>{text.place.address}</p>
 			</div>
 			<button
-				className={clsx(s.Text, "button")}
+				className={clsx(s.Button, "button")}
 				type="button"
 				onClick={dialogProps.open}
 			>

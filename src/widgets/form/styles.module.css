@@ -31,7 +31,13 @@
 
 .Bio {
 	font-size: var(--step-1);
+	margin-bottom: 0.5rem;
+}
+
+.Desc {
+	font-size: var(--step--1);
 	margin-bottom: 0.6rem;
+	color: rgb(85, 85, 85);
 }
 
 .Legend {

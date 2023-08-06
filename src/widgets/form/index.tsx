@@ -69,7 +69,11 @@ export const Form = () => {
 			<h1 className={s.Title}>{text.form.title}</h1>
 
 			<form className={s.Form} onSubmit={handleSubmit(onSubmit)}>
-				<p className={s.Bio}>Введите ваше имя и с кем вы придете</p>
+				<p className={s.Bio}>Введите ваше имя</p>
+				<p className={s.Desc}>
+					Кнопка +1 добавить еще поле, где можно будет ввести имя, того с кем вы
+					придете
+				</p>
 
 				<input
 					type="text"
