@@ -5,6 +5,7 @@ export const addNewEntryToDatabase = async ({
 	title,
 	contact,
 	time,
+	num,
 }: NotionCell) => {
 	const response = await notion.pages.create({
 		parent: { database_id: parsedDatabaseId },
@@ -35,6 +36,9 @@ export const addNewEntryToDatabase = async ({
 						},
 					},
 				],
+			},
+			Num: {
+				number: num,
 			},
 		},
 	});

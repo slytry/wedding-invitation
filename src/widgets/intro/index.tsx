@@ -9,6 +9,15 @@ export const Intro = () => {
 		<>
 			<Marquee />
 			<section className={clsx(s.Root, "container")}>
+				<video
+					className={s.Video}
+					src="/loop.mp4"
+					autoPlay
+					muted
+					playsInline
+					loop
+				/>
+				<div className={s.Overlay} />
 				<Names className={s.Names} />
 			</section>
 		</>

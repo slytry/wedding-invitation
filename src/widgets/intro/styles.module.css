@@ -1,6 +1,31 @@
 .Root {
-	/* min-height: 100vh; */
-	/* display: grid; */
-	/* place-content: center; */
+	position: relative;
+	padding: 0;
+	margin-top: -30px;
 	width: 100%;
+}
+
+.Video {
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 1;
+}
+
+.Names {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.Overlay {
+	aspect-ratio: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: black;
+
+	filter: opacity(30%);
+
 }

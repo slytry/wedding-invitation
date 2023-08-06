@@ -1,31 +1,6 @@
 .Root {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	gap: calc(4vh + 3vw);
-}
-
-.Title {
-	font-weight: 400;
-	font-size: var(--step-4);
+	color: white;
+	font-weight: 500;
+	font-size: var(--step-5);
 	text-align: center;
-}
-
-.Img {
-	--x-offset: 30vw;
-	--max-x-offset: 350px;
-	--min-x-offset: 130px;
-	--img-width: clamp(100px, 16vw, 200px);
-
-	width: var(--img-width);
-	aspect-ratio: 1;
-}
-
-.R {
-	transform: translateX(clamp(var(--min-x-offset), var(--x-offset), var(--max-x-offset)));
-}
-
-.N {
-	transform: translateX(clamp(calc(-1 * var(--max-x-offset)), calc(-1 * var(--x-offset)), calc(-1 * var(--min-x-offset))));
 }

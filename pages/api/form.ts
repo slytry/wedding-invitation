@@ -7,6 +7,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 			title: req.body.name,
 			contact: req.body.contact,
 			time: req.body.time,
+			num: req.body.num,
 		});
 
 		res.status(200).json(response);
