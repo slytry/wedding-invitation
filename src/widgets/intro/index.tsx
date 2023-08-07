@@ -16,6 +16,7 @@ export const Intro = () => {
 					muted
 					playsInline
 					loop
+					poster="/poster.png"
 				/>
 				<div className={s.Overlay} />
 				<Names className={s.Names} />
