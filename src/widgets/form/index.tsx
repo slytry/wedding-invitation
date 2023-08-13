@@ -42,7 +42,7 @@ export const Form = () => {
 
 	const onSubmit = async ({ contact, names, mainName }: Form) => {
 		try {
-			const newArr = [{ value: mainName }, ...names];
+			const newArr = [{ value: mainName }, ...names.filter((el) => !!el.value)];
 			const newData = {
 				contact,
 				name: newArr.map((el) => el.value.trim()).join(", "),
@@ -69,11 +69,25 @@ export const Form = () => {
 			<h1 className={s.Title}>{text.form.title}</h1>
 
 			<form className={s.Form} onSubmit={handleSubmit(onSubmit)}>
+				<legend className={s.Legend}>{text.form.q}</legend>
+
+				<div className={s.Checkboxes}>
+					{text.form.answ.map((el) => (
+						<Radio
+							key={el.value}
+							label={el.value}
+							name={el.name}
+							register={register}
+							required
+						/>
+					))}
+				</div>
+
 				<p className={s.Bio}>Введите ваше имя</p>
-				<p className={s.Desc}>
+				{/* <p className={s.Desc}>
 					Если вы собираетесь прийти не один, укажите это. Нажмите на кнопку +1
 					и введите имя
-				</p>
+				</p> */}
 
 				<input
 					type="text"
@@ -84,6 +98,7 @@ export const Form = () => {
 					placeholder={text.form.placeholder}
 					className={s.Input}
 				/>
+
 				{fields.map((field, i) => (
 					<input
 						type="text"
@@ -95,24 +110,14 @@ export const Form = () => {
 						className={s.Input}
 					/>
 				))}
-
-				<legend className={s.Legend}>{text.form.q}</legend>
-				{text.form.answ.map((el) => (
-					<Radio
-						key={el.value}
-						label={el.value}
-						name={el.name}
-						register={register}
-						required
-					/>
-				))}
 				<button
 					className={clsx(s.Button)}
 					onClick={() => append({ value: "" })}
 					type="button"
 				>
-					+1
+					Я буду не один/одна
 				</button>
+
 				<button className={s.Button} type="submit" disabled={!isValid}>
 					{text.form.sent}
 				</button>

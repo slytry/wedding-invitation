@@ -12,7 +12,7 @@
 }
 
 .Text:not(:last-child) {
-	margin-bottom: var(--space-s);
+	/* margin-bottom: 5px; */
 }
 
 .Button {

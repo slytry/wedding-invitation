@@ -1,7 +1,7 @@
 .Root {
 	padding-block: var(--space-l);
 	text-align: left;
-	margin-inline: var(--space-s);
+	margin-inline: calc(var(--space-s) - 0.5rem);
 	border: 2px dashed black;
 	border-radius: 20px;
 	position: relative;
@@ -10,17 +10,18 @@
 .Title {
 	font-size: var(--step-1);
 	text-align: center;
-	margin-bottom: var(--space-m);
+	margin-bottom: var(--space-l);
 	line-height: 1.5;
 }
 
 .Input {
 	all: unset;
 	font-size: var(--step-0);
-	margin-bottom: var(--space-l);
 	padding-block: var(--space-3xs);
 	border-bottom: 1px solid black;
 }
+
+
 
 
 .Input::placeholder {
@@ -29,29 +30,31 @@
 	сolor: #e3e3e3;
 }
 
+.Checkboxes {
+	margin-bottom: var(--space-m);
+}
+
 .Bio {
 	font-size: var(--step-1);
-	margin-bottom: 0.5rem;
 }
 
 .Desc {
 	font-size: var(--step--1);
-	margin-bottom: 0.6rem;
 	color: rgb(85, 85, 85);
 }
 
 .Legend {
 	font-size: var(--step-1);
-	margin-bottom: var(--space-m);
 }
 
 
 .Form {
 	display: grid;
+	gap: var(--space-m);
 }
 
-.Button:first-of-type {
-	margin-top: var(--space-l);
+.Button:last-of-type {
+	margin-top: var(--space-m);
 }
 
 .Button {
@@ -65,7 +68,7 @@
 	color: white;
 	background-color: black;
 	border: none;
-	margin-top: var(--space-s);
+	/* margin-top: var(--space-s); */
 	outline: none;
 	cursor: pointer;
 	position: relative;
